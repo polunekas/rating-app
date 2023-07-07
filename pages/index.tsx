@@ -1,10 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import React from 'react'
+import { Htag, Button } from '../components'
 
 export default function Home() {
   return (
-    <div>
-		HELEEEEW ji
-    </div>
+  	<>
+		<Htag tag='h1'>Текст</Htag>
+		<Button appearance='primary' className='dslfkn'>Кнопка</Button>
+		<Button appearance='ghost'>Кнопка</Button>
+	</>
+
   )
 }
