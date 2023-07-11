@@ -21,10 +21,6 @@ const [rating, setRating] = useState<number>(4)
 		<Tag size = 'm' color='primary'>red</Tag>
 
 		<Rating rating={rating} isEditable setRating={setRating}/>
-
-		<ul>
-			{menu.map(m => (<li key = {m._id.secondCategory}>{m._id.secondCategory}</li>))}
-		</ul>
 		
 	</>
 
