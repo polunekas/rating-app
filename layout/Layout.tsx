@@ -10,7 +10,7 @@ import { AppContextProvider, IAppContext } from '../context/app.context'
 const Layout = ({children}: LayoutProps) => {
 	return (
 		<div className={styles.wrapper}>
-		<Header className={styles.header} />
+		{/* <Header className={styles.header} /> */}
 			<Sidebar className={styles.sidebar} />
 			<div className={styles.body}>
 				{children}
