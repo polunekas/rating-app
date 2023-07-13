@@ -2,10 +2,14 @@ import { SidebarProps } from './Sidebar.props'
 import styles from './Sidebar.module.css'
 import cn from 'classnames'
 import { Menu } from '../Menu/Menu'
+import Logo from '../logo.svg'
 
-export const Sidebar = ({...props}: SidebarProps) => {
+
+export const Sidebar = ({className, ...props}: SidebarProps) => {
 	return (
-		<div {...props}>
+		<div className={cn(className, styles.sidebar)}  {...props}>
+		<Logo className ={styles.logo} />
+			<div>Поиск</div>
 			<Menu/>
 		</div>
 	)
