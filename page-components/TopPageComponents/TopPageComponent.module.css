@@ -4,12 +4,8 @@
 	align-items: baseline;
 	justify-items: left;
 	gap: 20px;
-	
 }
 
-.wrapper {
-	margin-top: 40px;
-}
 
 .hhTitle {
 	display: grid;
@@ -17,6 +13,26 @@
 	align-items: baseline;
 	justify-items: left;
 	gap: 20px;
+}
 
+.seo h1 {
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 35px;
+	margin: 0;
+}
 
+.seo h2 {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 30px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.seo h3 {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27px;
+	margin: 0;
 }
