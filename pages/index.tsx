@@ -1,5 +1,5 @@
 import React from 'react'
-import { Htag, Button, P, Tag, Rating } from '../components'
+import { Htag, Button, P, Tag, Rating, Input, Textarea } from '../components'
 import { useState } from 'react'
 import { withLayout } from '../layout/Layout'
 import { GetStaticProps } from 'next'
@@ -21,6 +21,8 @@ const [rating, setRating] = useState<number>(4)
 		<Tag size = 'm' color='primary'>red</Tag>
 
 		<Rating rating={rating} isEditable setRating={setRating}/>
+		<Input placeholder='test'/>
+		<Textarea placeholder='testtext'/>
 		
 	</>
 

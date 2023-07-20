@@ -1,6 +1,6 @@
 import styles from './TopPageComponent.module.css'
 import cn from 'classnames'
-import { Advantages, Htag, P, Sort, Tag } from '../../components'
+import { Advantages, Htag, P, Product, Sort, Tag } from '../../components'
 import { TopPageComponentProps } from './TopPageComponent.props'
 import { Card } from '../../components/Card/Card'
 import { HhData } from '../../components/hhData/HhData'
@@ -23,7 +23,7 @@ export const TopPageComponent = ({page, products, firstCategory}: TopPageCompone
 			<Sort sort={sort} setSort={setSort}/>
 		</div>
 		<div>
-			{sortedProducts && sortedProducts.map(p => (<div key={p._id}>{p.title}</div>))}
+			{sortedProducts && sortedProducts.map(p => (<Product key={p._id} product= {p}/>))}
 		</div>
 
 		<div className={styles.hhTitle}>
