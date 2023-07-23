@@ -4,6 +4,7 @@ import cn from 'classnames';
 import { format } from 'date-fns';
 import { ru } from 'date-fns/locale';
 import { Rating } from '../Rating/Rating';
+import { ReviewProps } from './Review.props';
 
 export const Review = ({ review, className, ...props }: ReviewProps): JSX.Element => {
 	const { name, title, description, createdAt, rating } = review;
