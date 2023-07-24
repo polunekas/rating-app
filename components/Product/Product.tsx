@@ -80,7 +80,7 @@ export const Product = ({product, className, ...props}: ProductProps) => {
 				</div>
 			))}
 
-			<ReviewForm productId={product._id}/>
+			<ReviewForm productId={product._id} isOpened={isReviewOpened}/>
 		</Card>
 
 		</>

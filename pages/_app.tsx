@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import { AppProps } from 'next/app'
 import '../styles/globals.css'
 import Head from 'next/head'

@@ -11,7 +11,7 @@ import CloseIcon from './close.svg'
 import { IReviewForm } from './ReviewForm.interface';
 import { useForm, Controller } from 'react-hook-form';
 
-export const ReviewForm = ({ productId, className, ...props }: ReviewFormProps) => {
+export const ReviewForm = ({ productId, isOpened , className, ...props }: ReviewFormProps) => {
 
 const { register, control, handleSubmit } = useForm<IReviewForm>()
 const onSubmit = (data: IReviewForm) => {
@@ -28,7 +28,7 @@ const onSubmit = (data: IReviewForm) => {
 			<span>Оценка:</span>
 			<Controller 
 				control={control} name='rating' render={({ field }) => (
-				<Rating isEditable rating={field.value} setRating={field.onChange}/>
+				<Rating isEditable rating={field.value} ref = {field.ref} setRating={field.onChange}/>
 			)} />
 			
 		</div>
