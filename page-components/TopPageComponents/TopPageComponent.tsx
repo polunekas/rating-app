@@ -44,3 +44,5 @@ export const TopPageComponent = ({page, products, firstCategory}: TopPageCompone
 	
 	)
 	} 
+
+
