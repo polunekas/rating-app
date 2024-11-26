@@ -1,7 +1,7 @@
 import { Button } from "@/components/Button/Button";
 import { Htag } from "../components/index";
 import React from "react";
-import { Ptag, Tag } from "../components";
+import { Ptag, Tag, Rating } from "../components";
 
 const HomePage = (): JSX.Element => {
   return (
@@ -20,6 +20,7 @@ const HomePage = (): JSX.Element => {
       </Tag>
       <Tag color="primary">Smth</Tag>
       <Tag>Smth</Tag>
+      <Rating rating={4} />
     </>
   );
 };
