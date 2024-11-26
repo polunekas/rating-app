@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button/Button";
 import { Htag } from "../components/index";
 import React from "react";
+import { Ptag, Tag } from "../components";
 
 const HomePage = (): JSX.Element => {
   return (
@@ -9,6 +10,16 @@ const HomePage = (): JSX.Element => {
       <Htag tag="h3">Текст</Htag>
       <Button appearance={"primary"}>Click</Button>
       <Button appearance={"ghost"}>Click</Button>
+      <Tag color="primary">Smth</Tag>
+      <Tag color="green">Smth</Tag>
+      <Tag size="M" color="red">
+        Smth
+      </Tag>
+      <Tag size="S" color="red">
+        Smth
+      </Tag>
+      <Tag color="primary">Smth</Tag>
+      <Tag>Smth</Tag>
     </>
   );
 };
