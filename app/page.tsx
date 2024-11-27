@@ -1,9 +1,10 @@
-import { Button } from "@/components/Button/Button";
+"use client";
 import { Htag } from "../components/index";
-import React from "react";
-import { Ptag, Tag, Rating } from "../components";
+import React, { useState } from "react";
+import { Ptag, Tag, Rating, Button } from "../components";
 
 const HomePage = (): JSX.Element => {
+  const [rating, setRating] = useState<number>(4);
   return (
     <>
       <div>Добро пожаловать на мой сайт!</div>
@@ -20,7 +21,7 @@ const HomePage = (): JSX.Element => {
       </Tag>
       <Tag color="primary">Smth</Tag>
       <Tag>Smth</Tag>
-      <Rating rating={4} />
+      <Rating rating={rating} isEditable={true} setRating={setRating} />
     </>
   );
 };
